@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando o botão Editar */
+a.editar {
+    padding: 8px 16px;
+    background-color: #28a745; /* Cor verde para o botão Editar */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s;
+}
+
+a.editar:hover {
+    background-color: #218838; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+/* Estilizando o botão Deletar */
+a.deletar {
+    padding: 8px 16px;
+    background-color: #dc3545; /* Cor vermelha para o botão Deletar */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s;
+}
+
+a.deletar:hover {
+    background-color: #c82333; /* Tom mais escuro de vermelho ao passar o mouse */
+}
+

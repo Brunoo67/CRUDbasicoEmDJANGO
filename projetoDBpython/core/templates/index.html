@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles\index.css' %}">
+</head>
+<body>
+    <h1>CRUD em Django basicão com front meia boca</h1>
+
+
+    <ul>
+        {% for nota in notas %}
+            <li>{{ nota.id }} - {{ nota.nome }} 
+                <a href="{% url 'editar' nota.id %}" class="editar">Editar</a>
+                <a href="{% url 'deletar' nota.id %}" class="deletar">Deletar</a> 
+            </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{% url 'salvar' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="nome">
+        <button type="submit">Salvar</button>
+    </form>
+
+</body>
+</html>
